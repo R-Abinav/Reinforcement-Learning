@@ -53,7 +53,7 @@ class CustomCliffWalker(Env):
     #update agent state
     self.state = (x, y)
     
-    # calculate reward: -1 per step, -100 for cliff, 0 for goal
+    #calculate reward: -1 per step, -100 for cliff, 0 for goal
     reward = -1
     if self.layout[x, y] == 1:
       #penalty for falling into cliff
